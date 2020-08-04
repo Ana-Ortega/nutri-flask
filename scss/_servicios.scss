@@ -1,0 +1,67 @@
+
+/* SECCION DE SERVICIOS */
+.servicio-list{
+  display: flex ;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center; 
+  padding-top: 50px;
+}
+
+.servicio{
+  margin: 5px;
+  width: 240px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background:#72C0CC;
+  text-align: center;
+}
+
+.servicio img {
+  width: 100px;
+  height: 100px;
+  padding: 10px ;
+  object-fit: cover;
+}
+
+.servicio-detail{
+  margin: 5px 5px;
+  background-color: #f4fbff;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  height: 175px; 
+}
+
+.servicio-description{
+  text-align: center;
+  font: lighter;
+  font-size: 12px;
+  /* height: 50px; */
+}
+
+.servicio-url{
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration:none;
+  border-radius: 5px;
+}
+
+.articulos {
+  padding-bottom: 50px
+}
+
+/* FORMATO DE ACCESO A BLOG */
+.link-blog a {
+  color: #72C0CC;
+  text-decoration: none;
+  display: flex;
+  align-items:left;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+}

@@ -1,0 +1,32 @@
+
+/* SECCION FOOTER Y REDES SOCIALES */
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.social{
+  background-color: #72C0CC;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter{
+  background-image: url('../imagenes/twitter_loguito.jpg'); 
+}
+.social-link.facebook{
+  background-image: url('../imagenes/face_loguito.jpg');
+}
+.social-link.youtube{
+  background-image: url('../imagenes/youtube_loguito.jpg'); 
+}
+.social-link.linkedin{
+  background-image: url('../imagenes/linkedin_loguito.jpg');
+}

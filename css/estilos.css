@@ -1,0 +1,268 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+}
+
+/* para centrar */
+.wrapper {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* header */
+header {
+  width: 100%;
+  overflow: hidden;
+  background: #72C0CC;
+  margin-bottom: 20px;
+}
+
+/* texto logo principal ->NUTRICION */
+header .logo {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  font-weight: bold;
+  float: left;
+}
+
+/* MENU PRINCIPAL */
+header nav {
+  float: right;
+  line-height: 80px;
+}
+
+/* FORMATO MENU PRINCIPAL */
+header nav a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+/* EFECTO DEL MENU PRINCIPAL */
+header nav a:hover {
+  background: #E4ECEE;
+  border-radius: 50px;
+}
+
+.menu_bar {
+  display: none;
+}
+
+.contenido img {
+  width: 100%;
+  max-width: width 1000px;
+}
+
+@media screen and (max-width: 900px) {
+  header .logo {
+    display: none;
+  }
+
+  header nav {
+    width: 80%;
+    height: 50%;
+    margin: 0;
+    left: -100%;
+    position: fixed;
+    text-align: center;
+    line-height: 70px;
+    background: #72C0CC;
+  }
+
+  header nav a {
+    display: block;
+    float: none;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+  }
+
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    background: #72C0CC;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .menu_bar span {
+    float: right;
+    color: white;
+  }
+}
+/* SECCION DE SERVICIOS */
+.servicio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.servicio {
+  margin: 5px;
+  width: 240px;
+  height: 300px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #72C0CC;
+  text-align: center;
+}
+
+.servicio img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  object-fit: cover;
+}
+
+.servicio-detail {
+  margin: 5px 5px;
+  background-color: #f4fbff;
+  border-radius: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  height: 175px;
+}
+
+.servicio-description {
+  text-align: center;
+  font: lighter;
+  font-size: 12px;
+  /* height: 50px; */
+}
+
+.servicio-url {
+  color: #056fff;
+  border: 1px solid;
+  padding: 5px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.articulos {
+  padding-bottom: 50px;
+}
+
+/* FORMATO DE ACCESO A BLOG */
+.link-blog a {
+  color: #72C0CC;
+  text-decoration: none;
+  display: flex;
+  align-items: left;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* SECCION FOOTER Y REDES SOCIALES */
+.footer {
+  width: 100%;
+  text-align: center;
+}
+
+.social {
+  background-color: #72C0CC;
+  height: 100px;
+  padding-top: 20px;
+}
+
+.social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+}
+
+.social-link.twitter {
+  background-image: url("../imagenes/twitter_loguito.jpg");
+}
+
+.social-link.facebook {
+  background-image: url("../imagenes/face_loguito.jpg");
+}
+
+.social-link.youtube {
+  background-image: url("../imagenes/youtube_loguito.jpg");
+}
+
+.social-link.linkedin {
+  background-image: url("../imagenes/linkedin_loguito.jpg");
+}
+
+/* Contacto */
+.contacto {
+  text-align: center;
+}
+
+form {
+  margin: 50px auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  background: #ECFCF4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: center;
+}
+
+input,
+textarea {
+  width: 300px;
+  height: 40px;
+  border: 1px solid #999;
+}
+
+/* Destacado adicional para elementos que tienen el cursor */
+input:focus,
+textarea:focus {
+  border-color: #000;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
+
+/*# sourceMappingURL=estilos.css.map */

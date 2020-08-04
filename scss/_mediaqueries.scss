@@ -1,0 +1,40 @@
+@media screen and (max-width:900px){
+  header .logo {
+    display: none;
+  }
+
+  header nav {
+    width: 80%;
+    height: 50%;
+    margin: 0;
+    left: -100%;
+    position: fixed;
+    text-align: center;
+    line-height: 70px;
+    background: #72C0CC;
+  }
+
+  header nav a {
+    display: block;
+    float: none;
+  }
+
+  .menu_bar{
+    display: block;
+    width: 100%;
+  }
+
+  .menu_bar .bt-menu{
+    display: block;
+    padding: 20px;
+    background: #72C0CC;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .menu_bar span{
+    float: right;
+    color: white;
+  }
+}
