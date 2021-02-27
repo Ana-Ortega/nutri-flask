@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <!-- Imagen Principal -->
+  <div class="wrapper">
+  <section  class="contenido">
+      <img src="../static/imagenes/contacto.png" alt="">
+    </section>
+  </div>
+  <!-- Contenido texto -->
+
+  <div class="wrapper">
+  <div class="contacto">
+    <div class="contacto-texto">
+      <h5>Envianos un mensaje</h5>
+      <h6>¿Tiene alguna pregunta? Estamos aquí para ayudarte. </br>Envía un mensaje y nos pondremos en contacto contigo. </h6>
+    </div>
+   <form>
+
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Nombre" id="Nombre">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Apellidos" id="Apellidos">
+      </div>
+
+     </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" id="correo">
+      </div>
+      
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Mensaje</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" onclick="validateInputs()">Enviar</button>
+
+    </form>
+   
+
+  </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="../static/js/menu.js"> </script>
+  <script src="../static/js/contacto.js"> </script>
+
+  {% endblock content %}
+

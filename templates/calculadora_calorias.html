@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="wrapper">
+  <section  class="contenido">
+  
+    <img src="../static/imagenes/alimentacion-gym.jpg" alt="">
+  
+  </section>
+  </div>
+
+  <div class="wrapper">
+  <h3 class=""> </h3>
+  
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-9">
+        <div class="card my-5 bg-light text-center">
+          <div class="card-header">
+            <h1>CONTADOR DE CALORIAS</h1>
+          </div>
+          <div class="card-body">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Descripcion</th>
+                  <th scope="col">Calorias</th>
+                  <th scope="col">Carbohidratos</th>
+                  <th scope="col">Proteinas</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+              <thead class="thead-light">
+                <tr>
+                  <th>Total</th>
+                  <th id="totalCalories">0</th>
+                  <th id="totalCarbs">0</th>
+                  <th id="totalProtein">0</th>
+                  <th></th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+          <div class="card-footer">
+            <div class="row mb-2">
+              <div class="col">
+                
+                  <input type="text" class="form-control mb-2 mr-sm-2" id="description" placeholder="Descripcion">
+              </div>
+              <div class="col">
+                  <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="calories" placeholder="Calorias">
+              </div>
+              <div class="col">
+                  <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="carbs" placeholder="Carbohidratos">
+              </div>
+              <div class="col">
+                  <input type="number" min="0" class="form-control mb-2 mr-sm-2" id="protein" placeholder="Proteinas">
+              </div>
+              <div class="col">
+                  <button class="btn btn-primary mb-2" onclick="validateInputs()">
+                    <i class="fas fa-plus"> + </i>
+                  </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock content %}

@@ -1,36 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NUTRICION</title>
-  <link rel="icon" type="image/png" href="./imagenes/manzanita2.png">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/estilos.css">
-  <link rel="stylesheet" href="./css/menu.css">
-  <link rel="stylesheet" href="fonts.css">
-</head>
-<body>
-  <!-- Menu header -->
-  <header class="header"> 
-    <div class="wrapper">
-      <div class="menu_bar">
-        <a href="#" class="bt-menu"> <span class="icon-menu"></span>NUTRIOLOGA</a>
-      </div>
-      <div class="logo"> NUTRIOLOGA </div>
-      <nav>
-          <a class="link" href="index.html">inicio</a>
-          <a class="link" href="contacto.html">Contacto</a>
-          <a class="link" href="nutriologaexperiencia.html">Quien soy</a>
-          <a class="link" href="Reserva_cita.html">Reserva tu cita</a>
-      </nav>
-    </div>
-  </header>
+{% extends 'base.html' %}
+
+{% block content %}
   <!-- Imagen Principal -->
   <div class="wrapper">
     <section  class="contenido">
-      <img src="./imagenes/alimentacionadulto.jpeg" alt="Adultos">
+      <img src="../static/imagenes/alimentacionadulto.jpeg" alt="Adultos">
     </section>
   </div>
   <!-- Contenido texto -->
@@ -70,17 +44,4 @@
     </p>
   </div>
 
-  <!-- footer y redes sociales-->
-  <div class="footer">
-    <img src="./imagenes/barra-saludable_pequeña.jpg" alt="...">
-    <div class="social"> 
-      <a href="https://twitter.com" class="social-link twitter" target="_blank" ></a>
-      <a href="https://facebook.com" class="social-link facebook" target="_blank" ></a>
-      <a href="https://youtube.com" class="social-link youtube" target="_blank" ></a>
-      <a href="https://linkedin.com" class="social-link linkedin" target="_blank" ></a>
-    </div>
-  </div>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="./js/menu.js"> </script>
-</body>
-</html>
+  {% endblock content %}
